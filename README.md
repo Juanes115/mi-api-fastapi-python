@@ -46,9 +46,11 @@ uvicorn main:app --reload
 ## Endpoints disponibles
 
 | Método | Endpoint | Descripción |
-|--------|----------|-------------|
-| GET | `/` | Retorna `{"Hello": "World"}` |
-| GET | `/items/{item_id}` | Retorna el item por ID con parámetro opcional `q` |
+| :--- | :--- | :--- |
+| GET | `/` | Retorna un mensaje de saludo y valida el funcionamiento del servidor |
+| GET | `/items/{item_id}?q={valor}` | Retorna el item por ID y prueba parámetros de ruta y consulta |
+| GET | `/docs` | Documentación automática (Swagger) |
+| GET | `/redoc` | Documentación técnica (ReDoc) |
 
 ## Documentación automática
 
